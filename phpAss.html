@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>php_assignment</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
+	 <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+   <body>
+	<div class="container mt-2 col-md-3 br-7">
+		   <div class="card shadow-lg">
+		   <div class="card-body " style="background-color:black; ">
+		    <h3 class="text text-primary">Fill the form below! </h3>
+		     <small class="form-text text-success">We'll never share your details with anyone else.</small>
+	  <form method="post" class="text-info" action="phpAss.php">
+              <div class="form-group">
+              <label for="exampleInputFirstName">FirstName:</label>
+                <input type="text" class="form-control" name="fname" aria-describedby="emailHelp" placeholder="firstName" required>
+                  </div>
+
+               <div class="form-group">
+               <label for="exampleInputPassword1">Last Name:</label>
+               <input type="text" class="form-control" name="ln" placeholder="LastName">
+               </div>
+              <div class="form-group">
+  	          <label >Email:</label>
+  	          <input type="email" name="em" placeholder="Email.." class="   form-control">
+              </div>
+
+             <div class="form-group">
+        	<label>Password:</label>
+        	<input type="password"  class="form-control" id="shw" placeholder="password" name="pas">
+        	 <input type="checkbox" onclick="psw()" name="" class="btn btn-warning">Show/Hide
+
+        	 <input type="password"  class="form-control" placeholder="Confirm password" name="pass">
+        	 
+            </div>
+
+            <div class="form-group">
+      	     <label>Phone number:</label>
+            <input type="text" name="ph" class="form-control" placeholder="phone...." required="">
+            </div>
+            <input type="submit" class="btn btn-info" name="submit" value="Sign Up" required>
+            <a href="phpclass22.php"><strong>Login Here!</strong></a>
+     </form>
+     </div>
+  </div>
+</body>
+</html>
+  <script type="text/javascript">
+  function psw() {
+    var x = shw;
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+<style type="text/css">
+ body{
+       	background-color:#cc9900
+
+
+
+;
+       }
+   </style>
+
+<!-- <script >
+	$(document).ready(function(){
+		$('#see').click(function(){
+			$('#shw').toggle();
+		});
+	
+	})
+</script>
+ -->
+
+ 
